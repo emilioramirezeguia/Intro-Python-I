@@ -13,21 +13,30 @@ print(x)
 
 # Using y, change x so that it is [1, 2, 3, 4, 8, 9, 10]
 # YOUR CODE HERE
-for num in y:
-    x.append(num)
+# # 1st option
+# for num in y:
+#     x.append(num)
+# 2nd option
+x.extend(y)
 print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE
+# 1st option
 for num in x:
     if num == 8:
         x.remove(num)
+# # 2nd option
+# x.remove(100)
 print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
-add_here = x.index(9) + 1
-x.insert(add_here, 99)
+# # 1st option
+# add_here = x.index(9) + 1
+# x.insert(add_here, 99)
+# 2nd option
+x.insert(5, 99)
 print(x)
 
 # Print the length of list x

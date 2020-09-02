@@ -13,6 +13,9 @@ import sys
 # YOUR CODE HERE
 print("List: ", sys.argv)
 print("Name of the file: ", sys.argv[0])
+for args in sys.argv:
+    print(args)
+
 
 # Print out the OS platform you're using:
 # YOUR CODE HERE

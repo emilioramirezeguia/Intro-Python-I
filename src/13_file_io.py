@@ -20,7 +20,9 @@ with open('./foo.txt', 'r') as f:
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
-with open('./bar.txt', 'r+') as f:
+
+# I tried to write and read at the same time with 'r+' mode but couldn't. Can we review this?
+with open('./bar.txt', 'w') as f:
     f.write("You should be added to the file now. Are you?\n")
     f.write("Second line.\n")
     f.write("The final third line.\n")

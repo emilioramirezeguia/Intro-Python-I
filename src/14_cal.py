@@ -33,7 +33,6 @@ from datetime import datetime
 
 current_month = datetime.now().month
 # print(calendar.month(2020, current_month))
-print(calendar.month(2020, current_month))
 
 
 def get_calendar(month=current_month, year=2020):

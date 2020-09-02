@@ -68,6 +68,9 @@ print("4th waypoints", waypoints)
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
+# for waypoint in waypoints:
+#     for k, v in waypoint.items():
+#         print(v)
 for waypoint in waypoints:
-    for k, v in waypoint.items():
-        print(v)
+    print(
+        f"Name: {waypoint['name']}, Latitude: {waypoint['lat']}, Longitude: {waypoint['lon']}")

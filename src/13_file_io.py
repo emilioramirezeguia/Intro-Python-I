@@ -22,11 +22,27 @@ with open('./foo.txt', 'r') as f:
 # YOUR CODE HERE
 
 # I tried to write and read at the same time with 'r+' mode but couldn't. Can we review this?
+# with open('./bar.txt', 'w') as f:
+#     f.write("You should be added to the file now. Are you?\n")
+#     f.write("Second line.\n")
+#     f.write("The final third line.\n")
+
+# with open('./bar.txt', 'r') as f:
+#     read_data = f.read()
+#     print(read_data)
+
+# Read and Write at the same time.
+# with open('./bar.txt', 'w+') as f:
+#     f.write("First line.\n")
+#     f.write("Second line.\n")
+#     f.write("Third line.\n")
+#     f.seek(0)
+#     read_data = f.read()
+#     print(read_data)
 with open('./bar.txt', 'w') as f:
-    f.write("You should be added to the file now. Are you?\n")
+    f.write("First line.\n")
     f.write("Second line.\n")
-    f.write("The final third line.\n")
+    f.write("Third line.\n")
 
 with open('./bar.txt', 'r') as f:
-    read_data = f.read()
-    print(read_data)
+    print(f.read())
